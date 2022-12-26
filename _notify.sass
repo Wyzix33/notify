@@ -1,0 +1,76 @@
+
+.notice-container
+ z-index: 5
+ position: absolute
+ bottom: 0
+ padding: 0
+ display: flex
+ max-height: 45vh
+ flex-direction: column
+ right: 0
+ overflow-y: auto
+
+ .notification
+  display: flex
+  flex-direction: column
+  max-height: 600px
+  min-width: 250px
+  max-width: 350px
+  margin: 0 5px 5px 0
+  animation: fadein 1s
+  padding: 1px
+  overflow: hidden
+
+  &.warning
+   background-color: $warning-color
+
+  &.success
+   background-color: $success-color
+   color: $white-color
+
+  &.error
+   background-color: $error-color
+   color: $white-color
+
+  &.notice
+   background-color: $notice-color
+   color: $white-color
+  .close
+   cursor: pointer
+   padding: 0 5px
+   &::after
+    content: 'X'
+
+ .left
+  flex: 1
+
+ .header
+  display: flex
+  flex-direction: row
+  font-weight: 600
+  font-size: 12px
+  line-height: 20px
+
+ .msg
+  text-align: justify
+  max-height: 10vh
+  background-color: $white-color
+  color: $blue3-color
+  padding: 0 5px
+  font-size: 12px
+  overflow-x: hidden
+  overflow-y: auto
+  text-overflow: ellipsis
+ .footer
+  display: flex
+  font-size: 10px
+  font-weight: 600
+  flex-direction: row
+  background-color: $white-color
+  color: $green3-color
+
+ @keyframes fadein
+  from
+   opacity: 0
+  to
+   opacity: 1

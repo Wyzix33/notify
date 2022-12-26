@@ -1,0 +1,11 @@
+{
+  "name": "notify",
+  "version": "1.0.0",
+  "main": "notify.js",
+  "author": "Floricel Gabriel-Costin",
+  "license": "No License",
+  "private": true,
+  "dependencies": {
+    "event": "link:../event"
+  }
+}
