@@ -6,6 +6,6 @@
   "license": "No License",
   "private": true,
   "dependencies": {
-    "event": "link:../event"
+    "event": "Wyzix33/event"
   }
 }
