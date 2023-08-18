@@ -33,7 +33,8 @@ export function say(title, type = 'notice', body = '', subtitle = '', useru = ''
   <div class='msg'>${body}</div><div class='footer'><span class='left'>${useru}</span><span>${data}</span></div>`;
  main_.appendChild(alert);
  alert.scrollIntoView({ behavior: 'smooth' });
- if (type === 'notice' || type === 'success') timeouts.set(alert, setTimeout(close, 8000, alert));
+ // if (type === 'notice' || type === 'success') timeouts.set(alert, setTimeout(close, 8000, alert));
+ timeouts.set(alert, setTimeout(close, 5000, alert));
  sounds[type]?.play();
  return alert;
 }
